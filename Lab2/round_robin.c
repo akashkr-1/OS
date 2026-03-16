@@ -5,7 +5,7 @@ void round_robin(int at[], int bt[], int n, int quantum) {
     int rt_remaining[n], ct[n], tat[n], wt[n], rt[n];
     int first_visit[n]; 
     int time = 0, count = 0;
-    float avg_tat = 0, avg_wt = 0, avg_rt = 0;
+    float avg_tat = 0, avg_wt = 0;
 
     int queue[1000], head = 0, tail = 0;
     int in_queue[n];
@@ -77,7 +77,6 @@ void round_robin(int at[], int bt[], int n, int quantum) {
     }
     printf("\nAvg TAT: %.2f", avg_tat / n);
     printf("\nAvg WT: %.2f", avg_wt / n);
-    printf("\nAvg RT: %.2f\n", avg_rt / n);
 }
 
 int main() {
